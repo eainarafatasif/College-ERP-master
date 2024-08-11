@@ -23,7 +23,7 @@ Once all the packages are installed, you can start the Apache service and config
  systemctl start Nginx
  systemctl enable Nginx
 
-```bash
+```
 ### 2. **Clone Your GitHub Repository**
    ```bash
    cd /var/www/html/
