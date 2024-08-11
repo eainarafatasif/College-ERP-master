@@ -36,6 +36,8 @@ Once all the packages are installed, you can start the Apache service and config
    sudo apt install python3-venv
    python3 -m venv projectenv
    source projectenv/bin/activate
+   pip install django
+   pip install mysqlclient
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
