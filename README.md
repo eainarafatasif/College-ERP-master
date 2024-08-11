@@ -15,8 +15,15 @@ To deploy your Django project from GitHub using Nginx, MySQL, and an SSL certifi
    ```bash
    sudo apt update && sudo apt upgrade -y
    sudo apt install python3-pip python3-dev libpq-dev nginx curl git
+   sudo apt install mysql-server libmysqlclient-dev
    ```
+Once all the packages are installed, you can start the Apache service and configure it to run on startup by entering the following commands:
 
+```bash
+ systemctl start Nginx
+ systemctl enable Nginx
+
+```bash
 ### 2. **Clone Your GitHub Repository**
    ```bash
    cd /var/www/html/
