@@ -68,7 +68,7 @@ Once all the packages are installed, you can start the Apache service and config
    - Update your Django `settings.py` to connect to the MySQL database.
 
   ```bash
-      DATABASES = {
+  DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'your_db_name',
