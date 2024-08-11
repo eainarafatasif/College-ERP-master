@@ -152,6 +152,15 @@ Once all the packages are installed, you can start the Apache service and config
      sudo systemctl restart nginx
      ```
 
+Ensure Correct Permissions for Static and Media Files
+If you have static and media directories outside of the main project directory, set their ownership and permissions similarly:
+```bash
+sudo chown -R www-data:www-data /var/www/html/django-unfold/
+sudo chown -R www-data:www-data /var/www/html/django-unfold/
+sudo chmod -R 755 /var/www/html/django-unfold/
+sudo chmod -R 755 /var/www/html/django-unfold/
+```
+
 ### 9. **Obtain an SSL Certificate**
    - Install Certbot:
      ```bash
