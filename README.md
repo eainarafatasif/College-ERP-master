@@ -67,6 +67,20 @@ Once all the packages are installed, you can start the Apache service and config
      ```
    - Update your Django `settings.py` to connect to the MySQL database.
 
+  ```bash
+      DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'your_db_name',
+        'USER': 'your_db_user',
+        'PASSWORD': 'your_db_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+ ```
+
 ### 6. **Run Migrations and Collect Static Files**
    ```bash
    python manage.py makemigrations
