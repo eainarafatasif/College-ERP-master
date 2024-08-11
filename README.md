@@ -24,6 +24,13 @@ Once all the packages are installed, you can start the Apache service and config
  systemctl enable Nginx
 
 ```
+Now Allow the firewall
+```bash
+ufw allow 80
+ufw allow 443
+
+```
+
 ### 2. **Clone Your GitHub Repository**
    ```bash
    cd /var/www/html/
